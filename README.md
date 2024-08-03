@@ -15,4 +15,4 @@ Par desenvovler os cenários o treinando deve utilizar o simulador GNS3, que est
 
 [https://lapsicloud.ddns.net/index.php/s/yMPHQsa3i2r2Lpm](https://lapsicloud.ddns.net/index.php/s/yMPHQsa3i2r2Lpm)
 
-Os cenários a serem utilizados estão disponíveis na pasta Cenarios-Ferramentas.
+Os cenários a serem utilizados estão disponíveis na pasta Ferramentas.
