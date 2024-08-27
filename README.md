@@ -15,7 +15,7 @@ Para usar o material há três possibilidades:
 3. Utilizar máquina virtual, que pode ser baixadao no endereço:
 [https://lapsicloud.ddns.net/index.php/s/riZE3Jn77CwYsGo](https://lapsicloud.ddns.net/index.php/s/riZE3Jn77CwYsGo)
   
-As topologias de redes utilizadas no GNS3 para os cenários estão disponíveis na pasta *Ferramentas*.
+As topologias de redes utilizadas no GNS3 para os cenários estão disponíveis na pasta *Ferramentas*, ou no caso da máquina virtual já estão disponíveis na própria máquina.
 
 Em qualquer uma das opções, o treinando deve acessar a palataforma http://34.151.219.97/moodle/ e seguir a descrição dos cenários e as tarefas lá descritas. As credenciais de acesso podem ser obtidas via solicitação ao e-mail ecg@dee.ufcg.edu.br.  Para visualização pode-se utilizar login: visitante Senha V1s1t@nt3!
 
