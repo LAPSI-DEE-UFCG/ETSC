@@ -13,6 +13,8 @@ No momento o curso de Ferramentas estáo finalizado, e o treinando deve acessar 
 
 Par desenvovler os cenários o treinando deve utilizar o simulador GNS3, que está disponível em máquina Virtual que está disponível para download no endereço
 
+[https://lapsicloud.ddns.net/index.php/s/riZE3Jn77CwYsGo]
+
 [https://lapsicloud.ddns.net/index.php/s/yMPHQsa3i2r2Lpm](https://lapsicloud.ddns.net/index.php/s/yMPHQsa3i2r2Lpm)
 
 Os cenários a serem utilizados estão disponíveis na pasta Ferramentas.
