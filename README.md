@@ -10,7 +10,7 @@ Os artefatos consistem em um conjunto de cenários montados no simualador GNS3 n
 3. **Blue Team**: formas de atuação do Blue Team.
 
 Para usar o material há três possibilidades:
-1. Instalar o GNS3 na máquin local (instruções em breve);
+1. Instalar o GNS3 na máquin local (instruções em breve): [Clique aqui](https://github.com/LAPSI-DEE-UFCG/ETSC/blob/main/Instala%C3%A7%C3%A3o/Local.md);
 2. Instalar o GNS3 em um servidor e disponibilizar acesso (instruções em breve)
 3. Utilizar máquina virtual, que pode ser baixadao no endereço:
 [https://lapsicloud.ddns.net/index.php/s/riZE3Jn77CwYsGo](https://lapsicloud.ddns.net/index.php/s/riZE3Jn77CwYsGo)
