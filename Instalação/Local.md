@@ -12,7 +12,7 @@ Processador com seis núcleos;
 100 GB livres de armazenamento;
 Ubuntu 20.04 LTS ou Windows 10.
 
-## INSTALAÇÃO NO UBUNTU 20.04 OU POSTERIOR
+## INSTALAÇÃO NO UBUNTU 20.04
 
 Os programas GNS3 Cliente e GNS3 Servidor serão instalados com base na documentação oficial disponível no site do GNS3. Em seguida, serão criados grupos de permissões e usuários com direitos de convidado para os participantes do curso que farão uso da ferramenta. Os usuários serão incluídos nesses grupos para que possam aproveitar ao máximo os recursos do GNS3. Os passos usados para a instalação e configuração do GNS3 Cliente e GNS3 Servidor são apresentados a seguir:
 
