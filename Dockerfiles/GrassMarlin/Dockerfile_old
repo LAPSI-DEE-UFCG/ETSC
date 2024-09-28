@@ -1,0 +1,33 @@
+# Baseado no Ubuntu 16.04
+FROM ubuntu:16.04
+
+# Metadados do container, incluindo informações do criador
+LABEL maintainer="Fernando Barros, <fernando.barros@ee.ufcg.edu.br>"
+LABEL version="v0.1"
+LABEL description="Contêiner para executar o GrassMarlin com suporte à interface gráfica"
+
+# Configura o ambiente para não precisar de interação do usuário
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Configura a variável DISPLAY para o X11
+ENV DISPLAY=:0
+
+# Instala pacotes necessários
+RUN apt-get update && apt-get install -y \
+    libpcap-dev \
+    xdg-utils \
+    openjdk-8-jdk \
+    libcanberra-gtk-module \
+    libxrender1 \
+    libxtst6 \
+    libxi6 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copia o pacote .deb do GrassMarlin para dentro do container
+COPY app/grassmarlin_3.2.1.ubuntu1604-1_amd64.deb /tmp/grassmarlin.deb
+
+# Instala o GrassMarlin
+RUN dpkg -i /tmp/grassmarlin.deb && rm /tmp/grassmarlin.deb
+
+# Executa o GrassMarlin
+CMD ["grassmarlin"]

@@ -1,0 +1,283 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  background-color: #fafafa;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo__loading {
+  width: 80px;
+  margin-top: 250px;
+}
+
+.logoname__loading {
+  width: 80px;
+  margin-top: 250px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.container__images {
+  position: relative;
+}
+
+.carousel__image {
+  opacity: 0;
+  position: absolute;
+  right: 59px;
+  top: 26px;
+  transition: opacity 1.5s ease-out;
+}
+
+.selected {
+  opacity: 1;
+}
+
+.login__signin {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  padding: 0px 40px;
+  margin-bottom: 10px;
+}
+
+.instagram__logo {
+  width: 70%;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+#user,
+#password {
+  font-size: 12px;
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 13px 7px;
+  margin-bottom: 20px;
+}
+
+#user:focus,
+#password:focus {
+  border: 1px solid #000000;
+}
+
+.email__label,
+.password__label {
+  position: absolute;
+  top: 24%;
+  left: 10px;
+  font-size: 12px;
+  color: #909090;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+#user:focus ~ .email__label,
+#user:not(:placeholder-shown) ~ .email__label,
+#password:focus ~ .password__label,
+#password:not(:placeholder-shown) ~ .password__label {
+  top: 5px;
+  left: 10px;
+  font-size: 9px;
+  color: #909090;
+}
+
+.show {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  right: 10px;
+  bottom: 35px;
+}
+
+button {
+  all: unset;
+  font-size: 15px;
+  background-color: #b2dffc;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  padding: 7px 0px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.separator {
+  position: relative;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.separator__ou {
+  position: absolute;
+  text-align: center;
+  background-color: #fafafa;
+  color: grey;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0px 20px;
+}
+
+.login__fboption {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.fb__join {
+  display: flex;
+}
+
+.facebook__icon img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.facebook__name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #385185;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.facebook__forgot {
+  font-size: 12px;
+  color: #385185;
+  cursor: pointer;
+}
+
+.login__signup {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  padding: 20px 0px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0095f6;
+}
+
+.login__getapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getapp__call {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+
+.app__store,
+.google__play {
+  width: 136px;
+  cursor: pointer;
+}
+
+.app__store {
+  margin-right: 6px;
+}
+
+footer {
+  max-width: 970px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  font-size: 12px;
+  color: grey;
+  padding: 6px 5px;
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: grey;
+  padding: 6px 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.language {
+  margin-right: 20px;
+}
