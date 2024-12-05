@@ -89,7 +89,7 @@ gns3
 1. Após o download ser concluído, execute o instalador.
 2. Siga as instruções apresentadas pelo assistente de instalação para concluir o processo.
 
-### Configuração do GNS3 com VM para Containers em Windows
+### Configuração do GNS3 para execução de contêineres
 
 Após o download e instalação do **GNS3**, siga os passos abaixo para configurar o ambiente para uso de containers em sistemas Windows. Essa configuração utiliza a **VM do GNS3** como servidor local para execução de containers, QEMUs e outros recursos avançados.
 
@@ -105,9 +105,10 @@ Após o download e instalação do **GNS3**, siga os passos abaixo para configur
 3. Após o download, descompacte o arquivo `.zip`.
 
 #### **Passo 3: Importar e configurar a VM do GNS3**
-1. Clique duas vezes no arquivo da VM descompactado para abrir o assistente de importação do VMware.
-2. Siga as instruções na tela para importar a VM.
-3. Após a importação, inicie a VM.
+1. Inicie o VMware e clique em `Open a Virtual Machine`, navegue até o diretório onde o arquivo `.zip` foi extraído e selecione o arquivo `GNS3 VM.ova`.
+2. Insira o nome que desejar para identificar essa VM e selecione `Import`.
+3. Após a importação, clique em `Edit virtual machine settings` → `Processors`, desmarque a opção `Virtualize Intel VT-x/EPT or AMD-V/RVI` e clique em **OK**.
+4. Inicie a VM clicando em `Play virtual machine`.
 
 #### **Passo 4: Configurar o servidor remoto no GNS3**
 1. Retorne ao sistema hospedeiro e abra o **GNS3**.
@@ -115,8 +116,8 @@ Após o download e instalação do **GNS3**, siga os passos abaixo para configur
    **Run appliances on a remote server (advanced usage)**.
 3. Preencha os campos de configuração com as informações exibidas na tela de inicialização da VM:
    - **Host**: Endereço IP da VM do GNS3.
-   - **Port**: Porta padrão (usualmente `3080`).
-   - **User**: Nome de usuário exibido pela VM (padrão: `gns3`).
+   - **Port**: Porta padrão (usualmente `80`).
+   - **User**: Nome de usuário exibido pela VM (padrão: `admin`).
    - **Password**: Senha correspondente (padrão: `gns3`).
 
 #### **Passo 5: Verificar a conexão**
