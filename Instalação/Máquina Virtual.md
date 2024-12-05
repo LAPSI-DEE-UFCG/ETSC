@@ -2,8 +2,6 @@
 
 O **ETSC** é um emulador voltado para treinamentos em segurança cibernética, permitindo a execução de cenários de simulação de cibersegurança. Para acessar o ambiente de simulação, é necessário configurar uma máquina virtual (VM) desenvolvida para uso com o **VirtualBox (VB)**.
 
-## Configurações Possíveis
-
 ### Cliente e Servidor em Máquina Virtual
 Nesta configuração, tanto o cliente quanto o servidor do ETSC estão instalados na mesma máquina virtual, garantindo maior portabilidade e facilidade na configuração.
 
@@ -33,7 +31,7 @@ Essa opção é recomendada para:
 - **Processador:** Hexa-core, 2.5 GHz ou superior.
 - **Memória RAM:** 12 GB ou mais.
 - **Armazenamento:** 100 GB livres.
-- **Sistema Operacional Host:** Windows 10/11, macOS (última versão), ou Linux atualizado.
+- **Sistema Operacional Host:** Windows 10/11, macOS, ou Linux.
 
 ---
 
@@ -57,6 +55,12 @@ Escolha o ambiente desejado para simulação e faça o download da máquina virt
 1. Após o download, localize o arquivo `.ova` correspondente ao ambiente desejado.  
 2. Clique duas vezes no arquivo para abrir o assistente de importação do VirtualBox.  
 3. Siga as etapas do assistente e clique em **Importar** para concluir.
+
+### **Passo opcional: adição de recursos computacionais à VM**
+Caso sua máquina host possua as configurações recomendadas ou superior, execute os procedimentos abaixo para melhor experiência:
+1. Clique com o botão direito sobre a instância da VM → `Configurações` → `Sistema` → em `Memória Base`, altere para `6144 MB`.
+2. Ainda em `Sistema` → `Processador` → em `Processadores`, altere para `4` ou `5` (a depender do seu processador).
+3. Clique em **OK** para aplicar as alterações.
 
 ### **Passo 4: Iniciar o Ambiente de Simulação**
 1. No VirtualBox, selecione a máquina virtual importada e clique em **Iniciar**.  
