@@ -1,7 +1,5 @@
 # Guia de Instalação do GNS3 (Cliente e Servidor)
 
-## Configurações Possíveis
-
 ### Servidor e Cliente Instalados no mesmo host
 Nesta configuração, os softwares **GNS3 Cliente** e **GNS3 Servidor** são instalados no mesmo sistema operacional (Windows, Mac ou Linux).
 
