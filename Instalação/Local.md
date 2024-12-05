@@ -89,9 +89,41 @@ gns3
 1. Após o download ser concluído, execute o instalador.
 2. Siga as instruções apresentadas pelo assistente de instalação para concluir o processo.
 
-#### **Passo 3: Iniciar o GNS3**
-1. Após a instalação ser concluída com sucesso, inicie o GNS3 normalmente através do atalho criado no desktop ou no menu iniciar.
+### Configuração do GNS3 com VM para Containers em Windows
+
+Após o download e instalação do **GNS3**, siga os passos abaixo para configurar o ambiente para uso de containers em sistemas Windows. Essa configuração utiliza a **VM do GNS3** como servidor local para execução de containers, QEMUs e outros recursos avançados.
+
+#### **Passo 1: Instalar o VMware Workstation ou Fusion**
+1. Baixe e instale o **VMware Workstation ou Fusion** a partir do site oficial:  
+   [https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+2. Siga as instruções do instalador para concluir a instalação.
+
+#### **Passo 2: Fazer o download da VM do GNS3**
+1. Acesse a página oficial para download da VM do GNS3:  
+   [https://gns3.com/software/download-vm](https://gns3.com/software/download-vm)
+2. Na página de download, selecione a opção **VMware Workstation and Fusion**.
+3. Após o download, descompacte o arquivo `.zip`.
+
+#### **Passo 3: Importar e configurar a VM do GNS3**
+1. Clique duas vezes no arquivo da VM descompactado para abrir o assistente de importação do VMware.
+2. Siga as instruções na tela para importar a VM.
+3. Após a importação, inicie a VM.
+
+#### **Passo 4: Configurar o servidor remoto no GNS3**
+1. Retorne ao sistema hospedeiro e abra o **GNS3**.
+2. Durante a configuração inicial ou ao adicionar um novo servidor, selecione a opção:  
+   **Run appliances on a remote server (advanced usage)**.
+3. Preencha os campos de configuração com as informações exibidas na tela de inicialização da VM:
+   - **Host**: Endereço IP da VM do GNS3.
+   - **Port**: Porta padrão (usualmente `3080`).
+   - **User**: Nome de usuário exibido pela VM (padrão: `gns3`).
+   - **Password**: Senha correspondente (padrão: `gns3`).
+
+#### **Passo 5: Verificar a conexão**
+1. Teste a conexão com o servidor remoto clicando em **Test Settings**.
+2. Após verificar a conexão bem-sucedida, finalize a configuração.
 
 ---
 
+Com a VM configurada como servidor remoto, o ambiente do GNS3 estará pronto para uso com containers, QEMUs e outros recursos avançados.
 Se houver dúvidas ou dificuldades durante a instalação, consulte a [documentação oficial](https://docs.gns3.com/) ou o fórum da comunidade GNS3 para obter suporte.
