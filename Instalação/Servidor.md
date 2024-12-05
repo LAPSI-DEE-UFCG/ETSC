@@ -1,9 +1,5 @@
 # Guia de Instalação do GNS3 (Servidor)
 
-Este guia descreve o processo de instalação e configuração do **GNS3 Servidor** no Linux e do **X2Go** para acesso remoto seguro via túnel SSH.
-
----
-
 ## Configurações Possíveis
 
 ### Servidor Instalado no Host
@@ -97,9 +93,7 @@ gns3server
 
 O **X2Go** é utilizado para acessar o servidor de forma remota, com interface gráfica segura via túnel SSH. A seguir, são apresentados os passos para instalação e configuração do **X2Go Servidor** no Linux e do **X2Go Cliente** em sistemas Linux, Windows ou macOS.
 
----
-
-### Instalação do X2Go Servidor no Linux
+### Instalação do Servidor X2Go no Linux
 
 No servidor, execute os seguintes comandos para instalar o **X2Go Servidor** e as dependências necessárias:
 
@@ -113,13 +107,11 @@ sudo apt -y install xfce4 xfce4-goodies
 sudo apt -y install tigervnc-standalone-server tigervnc-viewer
 ```
 
-## Instalação do X2Go Cliente
+### Instalação do Cliente X2Go
 
 O **X2Go Cliente** é utilizado para acessar remotamente o servidor com interface gráfica via túnel SSH. A seguir, são apresentados os passos para instalação do cliente em sistemas Linux, Windows e macOS.
 
----
-
-### Instalação em Linux
+#### Instalação em Linux
 
 #### **Passo 1: Atualize a base de pacotes do sistema e instalar o cliente X2Go**
 Execute os seguintes comandos para atualizar o repositórios e instalar o cliente:
@@ -128,7 +120,7 @@ Execute os seguintes comandos para atualizar o repositórios e instalar o client
    sudo apt install -y x2goclient
    ```
 
-### Instalação em Windows e macOS
+#### Instalação em Windows e macOS
 
 #### **Passo 1: Acesse a página oficial do X2Go Cliente**
 1. Acesse a página oficial do X2Go em [https://wiki.x2go.org/doku.php/doc:installation:x2goclient/]([https://www.gns3.com](https://wiki.x2go.org/doku.php/doc:installation:x2goclient)/).
@@ -138,11 +130,9 @@ Execute os seguintes comandos para atualizar o repositórios e instalar o client
 1. Após o download ser concluído, execute o instalador.
 2. Siga as instruções apresentadas pelo assistente de instalação para concluir o processo.
 
-## Configuração do X2Go Cliente
+### Configuração do Cliente X2Go
 
 Após a instalação, é necessário configurar o X2Go Cliente para conectar ao servidor remoto. A seguir, estão os passos para realizar a configuração.
-
----
 
 #### **Passo 1: Abra o X2Go Cliente**
 Inicie o **X2Go Cliente** em seu sistema.
@@ -172,8 +162,6 @@ Clique no ícone da sessão criada e insira a senha fornecida pelo administrador
 ## Finalizando a Sessão
 
 Para encerrar a sessão de forma segura. A seguir, estão os passos para encerrar a sessão.
-
----
 
 #### **Passo 1: Retorne ao cliente X2Go**
 Volte para a interface do **X2Go Cliente**.
