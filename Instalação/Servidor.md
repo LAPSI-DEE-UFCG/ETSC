@@ -1,7 +1,5 @@
 # Guia de Instalação do GNS3 (Servidor)
 
-## Configurações Possíveis
-
 ### Servidor Instalado no Host
 Nesta configuração, o software **GNS3 Servidor** é instalado em um sistema operacional Linux.
 
