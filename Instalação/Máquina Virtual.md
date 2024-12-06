@@ -52,15 +52,19 @@ Escolha o ambiente desejado para simulação e faça o download da máquina virt
   [https://lapsicloud.ddns.net/index.php/s/8Eb6BL3yzBHyL5N](https://lapsicloud.ddns.net/index.php/s/8Eb6BL3yzBHyL5N)
 
 ### **Passo 3: Importar a Máquina Virtual no VirtualBox**
-1. Após o download, localize o arquivo `.ova` correspondente ao ambiente desejado.  
-2. Clique duas vezes no arquivo para abrir o assistente de importação do VirtualBox.  
-3. Siga as etapas do assistente e clique em **Importar** para concluir.
+1. Após o download do arquivo `.ova`, abra a interface do VirtualBox (VB).  
+2. Clique em `Arquivo` → `Importar Appliance...`.  
+3. Na janela que será exibida, clique em `Escolha um arquivo para importar o appliance virtual...` (ícone de pasta com uma seta verde).  
+4. Navegue até o diretório onde o arquivo `.ova` foi salvo, selecione o arquivo e clique em `Abrir`.  
+5. Clique em `Próximo` e revise as configurações da máquina virtual.  
+6. Por fim, clique em `Importar` para concluir o processo.
 
-### **Passo opcional: adição de recursos computacionais à VM**
-Caso sua máquina host possua as configurações recomendadas ou superior, execute os procedimentos abaixo para melhor experiência:
-1. Clique com o botão direito sobre a instância da VM → `Configurações` → `Sistema` → em `Memória Base`, altere para `6144 MB`.
-2. Ainda em `Sistema` → `Processador` → em `Processadores`, altere para `4` ou `5` (a depender do seu processador).
-3. Clique em **OK** para aplicar as alterações.
+### **Passo opcional: Adição de Recursos Computacionais à VM**
+Caso sua máquina host atenda aos requisitos recomendados, siga os passos abaixo para otimizar a performance da VM:  
+1. Clique com o botão direito na instância da VM e selecione `Configurações`.  
+2. No menu lateral, acesse `Sistema` → aba `Placa-Mãe` e ajuste o campo `Memória Base` para `6144 MB`.  
+3. Em seguida, vá para `Sistema` → aba `Processador` e ajuste o campo `Processadores` para `4` ou `5`, dependendo das capacidades do seu processador.  
+4. Por fim, clique em **OK** para salvar e aplicar as alterações.  
 
 ### **Passo 4: Iniciar o Ambiente de Simulação**
 1. No VirtualBox, selecione a máquina virtual importada e clique em **Iniciar**.  
