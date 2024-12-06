@@ -49,7 +49,7 @@ Escolha o ambiente desejado para simulação e faça o download da máquina virt
 - **Red Team:**  
   [https://lapsicloud.ddns.net/index.php/s/JQwYmDJkEBYSAmj](https://lapsicloud.ddns.net/index.php/s/JQwYmDJkEBYSAmj)  
 - **Blue Team:**  
-  [https://lapsicloud.ddns.net/index.php/s/8Eb6BL3yzBHyL5N](https://lapsicloud.ddns.net/index.php/s/8Eb6BL3yzBHyL5N)
+  [https://lapsicloud.ddns.net/index.php/s/J4W5mF3q7A9LmgM](https://lapsicloud.ddns.net/index.php/s/J4W5mF3q7A9LmgM)
 
 ### **Passo 3: Importar a Máquina Virtual no VirtualBox**
 1. Após o download do arquivo `.ova`, abra a interface do VirtualBox (VB).  
