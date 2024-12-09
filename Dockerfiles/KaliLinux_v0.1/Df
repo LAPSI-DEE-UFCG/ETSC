@@ -1,0 +1,44 @@
+FROM gns3/kalilinux
+
+LABEL org.opencontainers.image.authors="Fernando Barros, <fernando.barros@ee.ufcg.edu.br>"
+
+# Configurações de root e ajustes de inicialização
+RUN echo 'root:root' | chpasswd && \
+    printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
+
+# Atualização e instalação de pacotes essenciais
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y --no-install-recommends \
+        systemd systemd-sysv dbus dbus-user-session && \
+    apt-get install -y --no-install-recommends \
+        metasploit-framework hydra netdiscover nmap set \
+        nano hping3 net-tools netcat-traditional inetutils-ping tcpdump && \
+    apt-get install -y --no-install-recommends \
+        proxychains rdesktop python3 python3-pip telnet telnetd beef-xss && \
+    apt-get install -y --no-install-recommends \
+        build-essential libssl-dev libffi-dev python3-dev apache2 bettercap && \
+    apt-get install -y --no-install-recommends \
+        nikto openssh-server openssh-client openbsd-inetd fail2ban medusa && \
+    apt-get install -y --no-install-recommends \
+        dhcpstarv isc-dhcp-server xxd exploitdb pkg-config libgtk-3-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# Instalação de pacotes Python
+RUN pip3 install python-nmap
+
+# Correção dos diretórios do root
+COPY scripts/rockYou/ /root/rockYou/
+COPY scripts/SocialPhish/ /root/SocialPhish/
+COPY scripts/phishingDnsSpoofing/ /root/phishingDnsSpoofing/
+COPY scripts/malware/ /root/malware/
+COPY scripts/Cenario04_Criptografia/ /root/Cenario04_Criptografia/
+COPY scripts/portScan /root/portScan/
+
+# Configuração do ambiente e permissões
+RUN cp -r /root/phishingDnsSpoofing/* /var/www/html/ && rm -rf /root/phishingDnsSpoofing && \
+    chmod -R 775 /var/www/html && \
+    chown -R www-data:www-data /var/www/html && \
+    printf "systemctl start systemd-logind" >> /etc/profile
+
+# Define o ponto de entrada para o container
+ENTRYPOINT ["/sbin/init"]

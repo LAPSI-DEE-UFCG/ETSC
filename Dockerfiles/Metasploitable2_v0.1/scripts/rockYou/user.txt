@@ -1,0 +1,13 @@
+msfadmin
+root
+admin
+user
+guest
+test
+ubuntu
+debian
+centos
+pi
+ec2-user
+
+
