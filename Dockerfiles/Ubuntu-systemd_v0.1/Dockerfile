@@ -1,11 +1,8 @@
-FROM ubuntu:22.04
+FROM lapsiufcg/ubuntu2204-systemd:v0.1
 
-LABEL org.opencontainers.image.authors="Fernando Barros, <fernando.barros@ee.ufcg.edu.br>"
+RUN apt-get -y update && apt-get install -y net-tools
 
-RUN echo 'root:root' | chpasswd
-RUN printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
-RUN apt-get update
-RUN apt-get install -y systemd systemd-sysv dbus dbus-user-session ufw nano inetutils-ping
-RUN printf "systemctl start systemd-logind" >> /etc/profile
+COPY velociraptor-v0.72.0-linux-amd64 client.config.yaml /clients/
+COPY malware.sh /root/
 
-ENTRYPOINT ["/sbin/init"]
+RUN chmod +x /clients/velociraptor-v0.72.0-linux-amd64
